@@ -26,6 +26,7 @@ const myColors = {
   iconBgGradient1: "rgba(240, 246, 253, 1)",
   iconBgGradient2: "rgba(252, 251, 233, 1)",
   themeGrey1: "rgba(217, 217, 217, 1)",
+  greyText: "rgba(0, 0, 0, 0.55)",
 };
 
 const vuetify = createVuetify({
