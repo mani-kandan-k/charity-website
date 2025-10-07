@@ -5,10 +5,22 @@
     font-family: "Poppins";
 }
 
+:root{
+    --icon-bg1 : rgba(240, 246, 253, 1);
+    --icon-bg2 : rgba(252, 251, 233, 1);
+    --icon-bg-size : 4rem;
+}
+
 .--header{
     font-family: "Montserrat";
 }
 
 .--para{
     font-family: "Poppins";
+}
+
+.--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

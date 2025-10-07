@@ -16,9 +16,7 @@
                 support to thrive with dignity.
             </span>
         </v-col>
-    </v-row>
-    <v-row>
-        <v-col class="d-flex justify-center">
+        <v-col cols="12" class="d-flex justify-center">
             <img style="object-fit: cover; width: 95vw; height: 68vh;" src="../../../assets/hero_section.png"
                 alt="hero_section">
         </v-col>
