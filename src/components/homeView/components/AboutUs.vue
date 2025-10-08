@@ -17,14 +17,43 @@
             <span :class="greyText">{{ data.title }}</span>
         </v-col>
     </v-row>
+    <v-row class="px-2" style="margin-top: 4.5rem; margin-bottom: 4.5rem;">
+        <HighlightHeader header-text="About Vidivukaalam Foundation" />
+    </v-row>
+    <v-row>
+        <v-col cols="6">
+            <v-row>
+                <v-col cols="6">
+                    <img class="about-us-img" src="../../../assets/aboutUs_img1.png" alt="aboutUs_img1">
+                </v-col>
+                <v-col cols="6">
+                    <v-row>
+                        <v-col>
+                            <img class="about-us-img" src="../../../assets/aboutUs_img2.png" alt="aboutUs_img2">
+                        </v-col>
+                    </v-row>
+                    <v-row>
+                        <v-col>
+                            <img class="about-us-img" src="../../../assets/aboutUs_img3.png" alt="aboutUs_img3">
+                        </v-col>
+                    </v-row>
+                </v-col>
+            </v-row>
+        </v-col>
+        <v-col cols="6"></v-col>
+    </v-row>
 </template>
 
 <script>
+import HighlightHeader from '@/components/common/HighlightHeader.vue';
 export default {
     name: "AboutUs",
+    components: {
+        HighlightHeader
+    },
     data() {
         return {
-            iconSize: 36,
+            iconSize: 32,
             greyText: "font-weight-medium text-greyText",
             iconData: [
                 { icon: "mdi-star", title: "Lives Impacted", iconText: "2K+", color: "themeColor", },
@@ -46,5 +75,11 @@ export default {
 
 .icon-container {
     background-image: linear-gradient(to right, var(--icon-bg1), var(--icon-bg2));
+}
+
+.about-us-img {
+    object-fit: contain;
+    height: 15vh;
+    width: 10vw;
 }
 </style>
