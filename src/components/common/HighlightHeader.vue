@@ -1,5 +1,5 @@
 <template>
-    <h2 class="banner --header themeColor-Text text-uppercase py-1 pr-3">{{ headerText }}</h2>
+    <h2 class="banner --header text-themeHeader text-uppercase py-1 pr-3">{{ headerText }}</h2>
 </template>
 
 <script>

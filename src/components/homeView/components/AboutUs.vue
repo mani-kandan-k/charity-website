@@ -17,30 +17,44 @@
             <span :class="greyText">{{ data.title }}</span>
         </v-col>
     </v-row>
-    <v-row class="px-2" style="margin-top: 4.5rem; margin-bottom: 4.5rem;">
-        <HighlightHeader header-text="About Vidivukaalam Foundation" />
+    <v-row class="px-2" style="margin-top: 5rem; margin-bottom: 2rem;">
+        <HighlightHeader class="ml-4" header-text="About Vidivukaalam Foundation" />
     </v-row>
     <v-row>
-        <v-col cols="6">
-            <v-row>
-                <v-col cols="6">
-                    <img class="about-us-img" src="../../../assets/aboutUs_img1.png" alt="aboutUs_img1">
+        <v-col cols="6" class="--center">
+            <v-row class="">
+                <v-col class="d-flex align-end justify-center flex-column">
+                    <img class="ratio-img1 rounded-img1" src="../../../assets/aboutUs_img1.png"
+                        alt="aboutUs_img1"></img>
                 </v-col>
-                <v-col cols="6">
-                    <v-row>
-                        <v-col>
-                            <img class="about-us-img" src="../../../assets/aboutUs_img2.png" alt="aboutUs_img2">
-                        </v-col>
-                    </v-row>
-                    <v-row>
-                        <v-col>
-                            <img class="about-us-img" src="../../../assets/aboutUs_img3.png" alt="aboutUs_img3">
-                        </v-col>
-                    </v-row>
+                <v-col class="d-flex align-start justify-center flex-column">
+                    <img class="ratio-img2 rounded-img2 mb-2" src="../../../assets/aboutUs_img2.png" alt="aboutUs_img2">
+                    <img class="ratio-img3 rounded-img3 mt-2" src="../../../assets/aboutUs_img3.png" alt="aboutUs_img3">
                 </v-col>
             </v-row>
         </v-col>
-        <v-col cols="6"></v-col>
+        <v-col cols="6 px-5">
+            <p>
+                Vidivukaalam Foundation is a non-profit organization dedicated to transforming lives through
+                comprehensive community development programs. Since our inception, we have been working tirelessly to
+                address critical social issues and empower marginalized communities across India.
+            </p>
+            <h4 class="text-themeColor mt-6">Our Purpose</h4>
+            <p>
+                To create sustainable change by focusing on education, healthcare, women empowerment, and environmental
+                conservation.
+            </p>
+            <h4 class="text-themeColor mt-6">Community-Centered Approach</h4>
+            <p>
+                We believe in working with communities, not for them. Our programs are designed based on local needs and
+                implemented through community participation.
+            </p>
+            <h4 class="text-themeColor mt-6">Sustainable Impact</h4>
+            <p>
+                Our interventions focus on creating long-term, sustainable solutions that continue to benefit
+                communities even after our direct involvement ends.
+            </p>
+        </v-col>
     </v-row>
 </template>
 
@@ -77,9 +91,27 @@ export default {
     background-image: linear-gradient(to right, var(--icon-bg1), var(--icon-bg2));
 }
 
-.about-us-img {
-    object-fit: contain;
-    height: 15vh;
-    width: 10vw;
+.ratio-img1 {
+    height: calc(var(--img-size)*var(--img-size-addBy));
+    width: calc(calc(var(--img-size) * 16/21)*var(--img-size-addBy));
+    object-fit: cover;
+}
+
+.ratio-img2,
+.ratio-img3 {
+    height: var(--img-size);
+    width: calc(var(--img-size) * 8/9);
+    object-fit: cover;
+}
+
+.rounded-img1,
+.rounded-img2 {
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.rounded-img3 {
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
 }
 </style>
