@@ -8,7 +8,9 @@
 :root{
     --icon-bg1 : rgba(240, 246, 253, 1);
     --icon-bg2 : rgba(252, 251, 233, 1);
-    --icon-bg-size : 4rem;
+    --icon-bg-size : 3.5rem;
+    --img-size : 12.5vw;
+    --img-size-addBy : 1.4
 }
 
 .--header{
