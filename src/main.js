@@ -6,6 +6,8 @@ import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 import { aliases, mdi } from "vuetify/iconsets/mdi";
+import '@fortawesome/fontawesome-free/css/all.css'
+import { fa } from 'vuetify/iconsets/fa'
 
 import App from "./App.vue";
 import router from "./router";
@@ -17,6 +19,7 @@ const myColors = {
   themeAccent: "rgba(236, 18, 79, 1)",
   themeGreen: "rgba(0, 166, 62, 1)",
   themeGreenBg: "rgba(0, 166, 62, 0.15)",
+  greenBgBlur: "background: rgba(0, 166, 62, 0.2);",
   highlight: "rgba(255, 242, 0, 1)",
   highlightDark: "rgba(242, 201, 76, 1)",
   themeBg1: "rgba(152, 16, 250, 1)",
@@ -26,6 +29,7 @@ const myColors = {
   iconBgGradient1: "rgba(240, 246, 253, 1)",
   iconBgGradient2: "rgba(252, 251, 233, 1)",
   themeGrey1: "rgba(217, 217, 217, 1)",
+  themeGrey2: "rgba(217, 217, 217, 0.5)",
   greyText: "rgba(0, 0, 0, 0.55)",
 };
 
@@ -37,6 +41,7 @@ const vuetify = createVuetify({
     aliases,
     sets: {
       mdi,
+      fa
     },
   },
   defaults: {
