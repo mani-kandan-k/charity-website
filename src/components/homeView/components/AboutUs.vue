@@ -17,9 +17,7 @@
             <span :class="greyText">{{ data.title }}</span>
         </v-col>
     </v-row>
-    <v-row class="px-2" style="margin-top: 5rem; margin-bottom: 2rem;">
-        <HighlightHeader class="ml-4" header-text="About Vidivukaalam Foundation" />
-    </v-row>
+    <HighlightHeader class="mt-10" header-text="About Vidivukaalam Foundation" />
     <v-row>
         <v-col cols="6" class="--center">
             <v-row class="">
